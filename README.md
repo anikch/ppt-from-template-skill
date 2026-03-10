@@ -1,12 +1,12 @@
-# Generating PPTX from Template — Claude Skill
+# Generating PPTX from Template - Claude Skill
 
-A Claude AI skill that produces polished PowerPoint presentations using an uploaded `.pptx` file as the design source of truth. The output inherits the template's exact visual identity — colors, fonts, layouts, logos, and branding — with no generic AI aesthetics or hardcoded overrides.
+A Claude AI skill that produces polished PowerPoint presentations using an uploaded `.pptx` file as the design source of truth. The output inherits the template's exact visual identity - colors, fonts, layouts, logos, and branding - with no generic AI aesthetics or hardcoded overrides.
 
 ## What This Does
 
 When you upload a `.pptx` template to Claude and ask it to create a presentation, this skill ensures:
 
-- **Brand fidelity**: Colors, fonts, and layouts come from your template's theme — not hardcoded values
+- **Brand fidelity**: Colors, fonts, and layouts come from your template's theme - not hardcoded values
 - **Overflow prevention**: Text boxes are measured before content is written, with automated auditing to catch overflow before delivery
 - **Layout variety**: Content is mapped to the best-fitting layout, with no two consecutive slides using the same structure
 - **QA pipeline**: Placeholder detection, visual rendering, and overflow auditing run automatically before final output
@@ -43,8 +43,8 @@ python scripts/audit_overflow.py /path/to/unpacked/ppt/slides/
 ```
 
 Reports each text box as:
-- 🔴 **OVERFLOW** — must fix before delivering
-- 🟡 **AT RISK** — review visually
+- 🔴 **OVERFLOW** - must fix before delivering
+- 🟡 **AT RISK** - review visually
 
 ### Placeholder Detection
 The `check_placeholders.py` script catches leftover template text:
@@ -66,4 +66,4 @@ apt-get install poppler-utils  # for PDF-to-image rendering during QA
 
 ## License
 
-MIT — use it, modify it, share it, sell it, do whatever you want. See [LICENSE](LICENSE) for details.
+MIT - use it, modify it, share it, sell it, do whatever you want. See [LICENSE](LICENSE) for details.
