@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+*.pptx
+*.pdf
+*.jpg
+*.jpeg
+*.png
+thumbs*/
+unpacked/
